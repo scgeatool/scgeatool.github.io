@@ -55,7 +55,7 @@
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
               <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo/logo.svg" alt="Logo" />
+                <!-- img src="assets/images/logo/logo.svg" alt="Logo" / //-->
               </a>
               <button class="navbar-toggler">
                 <span class="toggler-icon"> </span>
@@ -171,11 +171,10 @@
           <div class="col-lg-12">
             <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
               <h1 class="ud-hero-title">
-                Open-Source Web Template for SaaS, Startup, Apps, and More
+                SCGEATOOL - Single-cell Gene Expression Analysis Tool
               </h1>
               <p class="ud-hero-desc">
-                Multidisciplinary Web Template Built with Your Favourite
-                Technology - HTML Bootstrap, Tailwind and React NextJS.
+                Standalone Application Running on Windows Machines That Do Not Have MATLAB Installed.
               </p>
               <ul class="ud-hero-buttons">
                 <li>
@@ -185,7 +184,7 @@
                 </li>
                 <li>
                   <a href="#installation" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-link-btn">
-                    Learn More <i class="lni lni-arrow-right"></i>
+                    Learn How to Install <i class="lni lni-arrow-right"></i>
                   </a>
                 </li>
               </ul>
@@ -197,7 +196,7 @@
               <img src="assets/images/hero/brand.svg" alt="brand" />
             </div>
             <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
-              <img src="assets/images/hero/aaa.jpg" alt="hero-image" />
+              <img src="assets/images/hero/hero-image2.svg" alt="hero-image" />
               <img
                 src="assets/images/hero/dotted-shape.svg"
                 alt="shape"
@@ -221,20 +220,18 @@
         <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
           <div class="ud-about-content-wrapper">
             <div class="ud-about-content">
-              <span class="tag">About Us</span>
+              <span class="tag">About</span>
               <h2>Brilliant Toolkit to Build Nextgen Website Faster.</h2>
               <p>
-                The main ‘thrust’ is to focus on educating attendees on how to
-                best protect highly vulnerable business applications with
-                interactive panel discussions and roundtables led by subject
-                matter experts.
+				Pre-compiled standalone releases are meant for those environments without access to 
+				Matlab licenses. One common scenario, for example, may be in cluster environments 
+				without Total-Academic-Headcount or equivalent licensing agreements, where users taking advantage 
+				of SCGEATOOL parallelization options may quickly deplete the pool of available Matlab licenses. 
+				Standalone releases provide access to all of the functionality of SCGEATOOL standard Matlab release 
+				encapsulated in a single application (while missing some of the added flexibility and 
+				speed of the Matlab environment)
               </p>
 
-              <p>
-                The main ‘thrust’ is to focus on educating attendees on how to
-                best protect highly vulnerable business applications with
-                interactive panel.
-              </p>
               <a href="javascript:void(0)" class="ud-main-btn">Learn More</a>
             </div>
           </div>
@@ -339,17 +336,8 @@
           <div class="col-lg-12">
             <div class="ud-section-title">
               <span>Installation</span>
-              <h2>Installing SCGEATOOL pre-compiled standalone releases</h2>
+              <h2>Instructions for PC/Windows installation</h2>
               <p>
-Pre-compiled standalone releases are meant for those environments without access to 
-Matlab licenses. One common scenario, for example, may be in cluster environments 
-without Total-Academic-Headcount or equivalent licensing agreements, where users taking advantage 
-of SCGEATOOL parallelization options may quickly deplete the pool of available Matlab licenses. 
-Standalone releases provide access to all of the functionality of SCGEATOOL standard Matlab release 
-encapsulated in a single application (while missing some of the added flexibility and 
-speed of the Matlab environment)
-</p>
-<h3>Instructions for PC/Windows installation</h3>
 
 Step 1. Download the file conn18b_win64.zip from www.nitrc.org/projects/conn and unzip this file 
 
@@ -411,14 +399,16 @@ Step 3. After these steps, to start SCGEATOOL simply double-click on the scgeato
               class="ud-contact-form-wrapper wow fadeInUp"
               data-wow-delay=".2s"
             >
-              <h3 class="ud-contact-form-title">Send us a Message</h3>
-              <form class="ud-contact-form">
+              <h3 class="ud-contact-form-title">Send us a Message</h3>              
+			  <form class="ud-contact-form" data-email="jamescai@genomezoo.net" name="sentMessage" id="contactForm" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbxJhbh4DQAltwn5PHDho2L_TqRTonRKm_R3_hTWh7S1BxEs5kRwSu_e1fm-OfjAfquuPQ/exec">
+
                 <div class="ud-form-group">
                   <label for="fullName">Full Name*</label>
                   <input
                     type="text"
                     name="fullName"
-                    placeholder="Adam Gelius"
+					id="name"
+                    placeholder=""
                   />
                 </div>
                 <div class="ud-form-group">
@@ -426,25 +416,29 @@ Step 3. After these steps, to start SCGEATOOL simply double-click on the scgeato
                   <input
                     type="email"
                     name="email"
-                    placeholder="example@yourmail.com"
+					id="email"
+                    placeholder=""
                   />
                 </div>
-                <div class="ud-form-group">
+                <!-- div class="ud-form-group">
                   <label for="phone">Phone*</label>
                   <input
                     type="text"
                     name="phone"
                     placeholder="+885 1254 5211 552"
                   />
-                </div>
+                </div //-->
                 <div class="ud-form-group">
                   <label for="message">Message*</label>
                   <textarea
                     name="message"
                     rows="1"
-                    placeholder="type your message here"
+                    placeholder=""
+					id="message"
                   ></textarea>
                 </div>
+				       <div id="success"></div>
+ 
                 <div class="ud-form-group mb-0">
                   <button type="submit" class="ud-main-btn">
                     Send Message
@@ -458,7 +452,7 @@ Step 3. After these steps, to start SCGEATOOL simply double-click on the scgeato
     </section>
     <!-- ====== Contact End ====== -->
 
-    <!-- ====== Footer Start ====== -->
+    <!-- ====== Footer Start ====== //-->
     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
       <div class="shape shape-1">
         <img src="assets/images/footer/shape-1.svg" alt="shape" />
@@ -472,202 +466,12 @@ Step 3. After these steps, to start SCGEATOOL simply double-click on the scgeato
       <div class="ud-footer-widgets">
         <div class="container">
           <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="ud-widget">
-                <a href="index.html" class="ud-footer-logo">
-                  <img src="assets/images/logo/Untitled.png" alt="logo" />
-                </a>
-                <p class="ud-widget-desc">
-                  We create digital experiences for brands and companies by
-                  using technology.
-                </p>
-                <ul class="ud-widget-socials">
-                  <li>
-                    <a href="https://twitter.com/MusharofChy">
-                      <i class="lni lni-facebook-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/MusharofChy">
-                      <i class="lni lni-twitter-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/MusharofChy">
-                      <i class="lni lni-instagram-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/MusharofChy">
-                      <i class="lni lni-linkedin-original"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
 
-            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">About Us</h5>
-                <ul class="ud-widget-links">
-                  <li>
-                    <a href="javascript:void(0)">Home</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Features</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">About</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Testimonial</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">Features</h5>
-                <ul class="ud-widget-links">
-                  <li>
-                    <a href="javascript:void(0)">How it works</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Privacy policy</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Terms of service</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Refund policy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">Our Products</h5>
-                <ul class="ud-widget-links">
-                  <li>
-                    <a
-                      href="https://lineicons.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                      >Lineicons
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://ecommercehtml.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                      >Ecommerce HTML</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://ayroui.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                      >Ayro UI</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://graygrids.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                      >Plain Admin</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10">
-              <div class="ud-widget">
-                <h5 class="ud-widget-title">Partners</h5>
-                <ul class="ud-widget-brands">
-                  <li>
-                    <a
-                      href="https://ayroui.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/ayroui.svg"
-                        alt="ayroui"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://ecommercehtml.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/ecommerce-html.svg"
-                        alt="ecommerce-html"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://graygrids.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/graygrids.svg"
-                        alt="graygrids"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://lineicons.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/lineicons.svg"
-                        alt="lineicons"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://uideck.com/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/uideck.svg"
-                        alt="uideck"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://tailwindtemplates.co/"
-                      rel="nofollow noopner"
-                      target="_blank"
-                    >
-                      <img
-                        src="assets/images/footer/brands/tailwindtemplates.svg"
-                        alt="tailwindtemplates"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="ud-footer-bottom">
         <div class="container">
-          <div class="row">
+          <!-- div class="row">
             <div class="col-md-8">
               <ul class="ud-footer-bottom-left">
                 <li>
@@ -687,11 +491,14 @@ Step 3. After these steps, to start SCGEATOOL simply double-click on the scgeato
                 <a href="https://uideck.com" rel="nofollow">UIdeck</a>
               </p>
             </div>
-          </div>
+          </div -->
+		  
+		  
         </div>
       </div>
     </footer>
-    <!-- ====== Footer End ====== -->
+     <!-- ====== Footer End ====== -->
+
 
     <!-- ====== Back To Top Start ====== -->
     <a href="javascript:void(0)" class="back-to-top">
@@ -703,6 +510,7 @@ Step 3. After these steps, to start SCGEATOOL simply double-click on the scgeato
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact_me.js"></script>
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
