@@ -14,11 +14,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SCGEATOOL | Single-cell Gene Expression Analysis Tool</title>
+    <title>SCGEATOOL :: Single-cell Gene Expression Analysis Tool</title>
 
     <!-- Primary Meta Tags -->
-<meta name="title" content="SCGEATOOL - Single-cell Gene Expression Analysis Tool">
-<meta name="description" content="SCGEATOOL - Single-cell Gene Expression Analysis Tool">
+<meta name="title" content="SCGEATOOL :: Single-cell Gene Expression Analysis Tool">
+<meta name="description" content="SCGEATOOL :: Single-cell Gene Expression Analysis Tool">
 
 
     <!--====== Favicon Icon ======-->
@@ -29,10 +29,12 @@
     />
 
     <!-- ===== All CSS files ===== -->
+	<!-- link rel="stylesheet" href="assets/css/bootstrap.css" /-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/lineicons.css" />
     <link rel="stylesheet" href="assets/css/ud-styles.css" />
+	
   </head>
   <body>
     <!-- ====== Header Start ====== -->
@@ -400,60 +402,48 @@
               class="ud-contact-form-wrapper wow fadeInUp"
               data-wow-delay=".2s"
             >
-              <h3 class="ud-contact-form-title">Send Us a Message</h3>       
-			  
+              <h3 class="ud-contact-form-title">Send Us a Message</h3>
 	      <form class="gform" data-email="jamescai@genomezoo.net" name="sentMessage" id="contactForm" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbxJhbh4DQAltwn5PHDho2L_TqRTonRKm_R3_hTWh7S1BxEs5kRwSu_e1fm-OfjAfquuPQ/exec">
 				
-				          
-                <div class="ud-form-group">
-                  <label for="name">Name*</label>
-				   <input
-                    type="text"
-                    name="name"
-					id="name"
-                    placeholder=""
-					required="required"
-					class="form-control"
-                  />                  
-				  <p class="help-block text-danger"></p>
-                </div>
-				
-          <!-- div class="form-group">
+		<div class="ud-form-group">
 		  <label for="name">Name*</label>
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div -->
+		   <input
+			type="text"
+			name="name"
+			id="name"
+			placeholder=""
+			required="required"
+		  />                  
+		  <p class="help-block text-danger"></p>
+		</div>
+				
           
-          <div class="ud-form-group">
-		  <label for="email">Email*</label>
-              <!-- input type="email" id="email" class="form-control" placeholder="Email" required="required" -->
-                  <input
-                    type="email"
-                    name="email"
-					id="email"
-                    placeholder=""
-					required="required"
-                  />			  
-              <p class="help-block text-danger"></p>
-            </div>
-          
+	  <div class="ud-form-group">
+	  <label for="email">Email*</label>
+		  <!-- input type="email" id="email" class="form-control" placeholder="Email" required="required" -->
+		  <input
+			type="email"
+			name="email"
+			id="email"
+			placeholder=""
+			required="required"
+		  />
+		  <p class="help-block text-danger"></p>
+		</div>
+		
         <div class="ud-form-group">
 		<label for="message">Message*</label>
-		
-          <!-- textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea -->
+		          <!-- textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea -->
                   <textarea
                     name="message"
-                    rows="1"
-                    placeholder=""
 					id="message"
+                    rows="1"
+                    placeholder=""					
 					required="required"
-                  ></textarea>		  
+                  ></textarea>  
           <p class="help-block text-danger"></p>
         </div>
-
-				
-				       <div id="success"></div>
- 
+								 
                 <div class="ud-form-group mb-0">
 				       <div id="success"></div>
                   <button type="submit" class="ud-main-btn">
