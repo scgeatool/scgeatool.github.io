@@ -341,7 +341,8 @@
               <h2>Instructions for PC/Windows Installation</h2>
 <p>Step 1. Download the file <a href="SCGEATOOL_StandaloneApplication.zip">SCGEATOOL_StandaloneApplication.zip</a> (9.92 MB) and unzip it.</p>
 
-<p>Step 2. Download <a href="https://www.mathworks.com/products/compiler/mcr.html" target="_blank">MATLAB Compiler Runtime (MCR) R2021b (9.11)</a> and run the MCR installer file. NOTE: You will need administrator rights to run the MATLAB Runtime installer. Click for <a href="readme.txt">details</a>.</p>
+<p>Step 2. Download <a href="https://www.mathworks.com/products/compiler/mcr.html" target="_blank">MATLAB Runtime version 9.11 (R2021b)</a> and run the MATLAB Runtime installer.</p>
+
 <p>Step 3. To start SCGEATOOL simply double-click on the scgeatool.exe icon.</p>
               
             </div>
@@ -399,26 +400,32 @@
               class="ud-contact-form-wrapper wow fadeInUp"
               data-wow-delay=".2s"
             >
-              <h3 class="ud-contact-form-title">Send us a Message</h3>              
-			  <form class="ud-contact-form" data-email="jamescai@genomezoo.net" name="sentMessage" id="contactForm" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbxJhbh4DQAltwn5PHDho2L_TqRTonRKm_R3_hTWh7S1BxEs5kRwSu_e1fm-OfjAfquuPQ/exec">
+              <h3 class="ud-contact-form-title">Send Us a Message</h3>       
+			  
+	      <form class="gform" data-email="jamescai@genomezoo.net" name="sentMessage" id="contactForm" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbxJhbh4DQAltwn5PHDho2L_TqRTonRKm_R3_hTWh7S1BxEs5kRwSu_e1fm-OfjAfquuPQ/exec">
+			  
+			  <!-- form class="ud-contact-form" data-email="jamescai@genomezoo.net" name="sentMessage" id="contactForm" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbxJhbh4DQAltwn5PHDho2L_TqRTonRKm_R3_hTWh7S1BxEs5kRwSu_e1fm-OfjAfquuPQ/exec" -->
 
                 <div class="ud-form-group">
                   <label for="fullName">Full Name*</label>
-                  <input
+				  <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                  <!-- input
                     type="text"
                     name="fullName"
 					id="name"
                     placeholder=""
-                  />
+                  / -->
                 </div>
                 <div class="ud-form-group">
                   <label for="email">Email*</label>
-                  <input
+				                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+
+                  <!-- input
                     type="email"
                     name="email"
 					id="email"
                     placeholder=""
-                  />
+                  / -->
                 </div>
                 <!-- div class="ud-form-group">
                   <label for="phone">Phone*</label>
@@ -430,12 +437,14 @@
                 </div //-->
                 <div class="ud-form-group">
                   <label for="message">Message*</label>
-                  <textarea
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+
+                  <!-- textarea
                     name="message"
                     rows="1"
                     placeholder=""
 					id="message"
-                  ></textarea>
+                  ></textarea -->
                 </div>
 				       <div id="success"></div>
  
@@ -511,6 +520,7 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/contact_me.js"></script>
+	<script src="assets/js/jqBootstrapValidation.js"></script>
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
