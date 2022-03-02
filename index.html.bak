@@ -14,11 +14,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SCGEATOOL | Single-cell Gene Expression Analysis Tool</title>
+    <title>SCGEATOOL :: Single-cell Gene Expression Analysis Tool</title>
 
     <!-- Primary Meta Tags -->
-<meta name="title" content="SCGEATOOL - Single-cell Gene Expression Analysis Tool">
-<meta name="description" content="SCGEATOOL - Single-cell Gene Expression Analysis Tool">
+<meta name="title" content="SCGEATOOL :: Single-cell Gene Expression Analysis Tool">
+<meta name="description" content="SCGEATOOL :: Single-cell Gene Expression Analysis Tool">
 
 
     <!--====== Favicon Icon ======-->
@@ -29,10 +29,12 @@
     />
 
     <!-- ===== All CSS files ===== -->
+	<!-- link rel="stylesheet" href="assets/css/bootstrap.css" /-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/lineicons.css" />
     <link rel="stylesheet" href="assets/css/ud-styles.css" />
+	
   </head>
   <body>
     <!-- ====== Header Start ====== -->
@@ -70,7 +72,7 @@
                   </li //-->
 				  
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#contact">Contact</a>
+                    <a class="ud-menu-scroll" href="#contact">Contact Us</a>
                   </li>
 				  
                   <li class="nav-item nav-item-has-children">
@@ -239,7 +241,7 @@
           <div class="col-lg-12">
             <div class="ud-section-title">
               <span>Features</span>
-              <h2>Main Features of SCGEATOOL</h2>
+              <h2>Main Features</h2>
               <p>
                 There are many features of SCGEATOOL as an end-to-end desktop application for single-cell transcriptome analysis.
               </p>
@@ -248,10 +250,10 @@
         </div>
         <div class="row">
 		
-		<div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
               <div class="ud-feature-icon">
-                <i class="lni lni-layers"></i>
+                <i class="lni lni-layout"></i>
               </div>
               <div class="ud-feature-content">
                 <h3 class="ud-feature-title">All Essential Functions</h3>
@@ -260,18 +262,17 @@
                 </p>
 				<!-- : QC, normalization, dimensionality reduction, clustering, cell type identification, differential expression analysis, gene regulatory analysis, and many more https://youtube.com/playlist?list=PLekWsTmNpdrGr1oOH6GzoNLjPq4i37qJP //-->
                 <a href="https://youtube.com/playlist?list=PLekWsTmNpdrGr1oOH6GzoNLjPq4i37qJP" class="ud-feature-link" target="learnmore">
-                  Learn More
+                  Learn More				  
+
                 </a>
               </div>
             </div>
-          </div>
-		  
-
-		  
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
+          </div>		
+		
+		<div class="col-xl-3 col-lg-3 col-sm-6">
+            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
               <div class="ud-feature-icon">
-                <i class="lni lni-layout"></i>
+                <i class="lni lni-layers"></i>
               </div>
               <div class="ud-feature-content">
                 <h3 class="ud-feature-title">Scalable 3D Visualization</h3>
@@ -285,6 +286,7 @@
             </div>
           </div>
 		  
+
 		  
           <div class="col-xl-3 col-lg-3 col-sm-6">
             <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
@@ -294,7 +296,7 @@
               <div class="ud-feature-content">
                 <h3 class="ud-feature-title">Versatile Data Integration</h3>
                 <p class="ud-feature-desc">
-                  Public scRNA-seq data in the GEO database can be imported without programming knowledge. SCGEATOOL supports a wide range of cross-study analyses and data integration to deepen your biological understanding.
+                  SCGEATOOL supports a wide range of cross-study analyses and data integration to deepen your biological understanding. Public scRNA-seq data in the GEO database can be imported without programming knowledge.
                 </p>
                 <a href="https://youtu.be/YxNfF9UMmSg?t=14&rel=0&mute=1&autoplay=0" class="ud-feature-link" target="learnmore">
                   Learn More
@@ -311,14 +313,14 @@
               <div class="ud-feature-content">
                 <h3 class="ud-feature-title">Free and Open-Source</h3>
                 <p class="ud-feature-desc">
-                  Source code for generating the SCGEATOOL standalone application is available at the GitHub repository. You can also find relevant citing publications by visiting <a href="https://scholar.google.com/scholar?cites=4661048952867744439&as_sdt=5,44&sciodt=0,44&hl=en" target="learnmore">Google Scholar</a>.
+                  Source code for generating the standalone application is available at the GitHub repository. You can also find relevant citing publications by visiting <a href="https://scholar.google.com/scholar?cites=4661048952867744439&as_sdt=5,44&sciodt=0,44&hl=en" target="learnmore">Google Scholar</a>.
                 </p>
                 <a href="https://github.com/jamesjcai/scGEAToolbox" class="ud-feature-link" target="learnmore">
                   Visit GitHub
                 </a>
               </div>
             </div>
-          </div>		  
+          </div>
           
         </div>
       </div>
@@ -389,7 +391,7 @@
                   </div>
                   <div class="ud-info-meta">
                     <h5>How Can We Help?</h5>
-                    <p>cailab@genomezoo.net</p>
+					<p><a href="https://cailab-tamu.github.io/">https://cailab-tamu.github.io/</a></p>
                   </div>
                 </div>
               </div>
@@ -400,71 +402,69 @@
               class="ud-contact-form-wrapper wow fadeInUp"
               data-wow-delay=".2s"
             >
-              <h3 class="ud-contact-form-title">Send Us a Message</h3>       
-			  
+              <h3 class="ud-contact-form-title">Send Us a Message</h3>
 	      <form class="gform" data-email="jamescai@genomezoo.net" name="sentMessage" id="contactForm" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbxJhbh4DQAltwn5PHDho2L_TqRTonRKm_R3_hTWh7S1BxEs5kRwSu_e1fm-OfjAfquuPQ/exec">
-			  
-			  <!-- form class="ud-contact-form" data-email="jamescai@genomezoo.net" name="sentMessage" id="contactForm" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbxJhbh4DQAltwn5PHDho2L_TqRTonRKm_R3_hTWh7S1BxEs5kRwSu_e1fm-OfjAfquuPQ/exec" -->
-
-                <div class="ud-form-group">
-                  <label for="fullName">Full Name*</label>
-				  <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-				  <p class="help-block text-danger"></p>
-                  <!-- input
-                    type="text"
-                    name="fullName"
-					id="name"
-                    placeholder=""
-                  / -->
-                </div>
-                <div class="ud-form-group">
-                  <label for="email">Email*</label>
-				                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-<p class="help-block text-danger"></p>
-                  <!-- input
-                    type="email"
-                    name="email"
-					id="email"
-                    placeholder=""
-                  / -->
-                </div>
-                <!-- div class="ud-form-group">
-                  <label for="phone">Phone*</label>
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder="+885 1254 5211 552"
-                  />
-                </div //-->
-                <div class="ud-form-group">
-                  <label for="message">Message*</label>
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-<p class="help-block text-danger"></p>
-                  <!-- textarea
+				
+		<div class="ud-form-group">
+		  <label for="name">Name*</label>
+		   <input
+			type="text"
+			name="name"
+			id="name"
+			placeholder=""
+			required="required"
+		  />                  
+		  <p class="help-block text-danger"></p>
+		</div>
+				
+          
+	  <div class="ud-form-group">
+	  <label for="email">Email*</label>
+		  <!-- input type="email" id="email" class="form-control" placeholder="Email" required="required" -->
+		  <input
+			type="email"
+			name="email"
+			id="email"
+			placeholder=""
+			required="required"
+		  />
+		  <p class="help-block text-danger"></p>
+		</div>
+		
+        <div class="ud-form-group">
+		<label for="message">Message*</label>
+		          <!-- textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea -->
+                  <textarea
                     name="message"
-                    rows="1"
-                    placeholder=""
 					id="message"
-                  ></textarea -->
-                </div>
-				       <div id="success"></div>
- 
+                    rows="1"
+                    placeholder=""					
+					required="required"
+                  ></textarea>  
+          <p class="help-block text-danger"></p>
+        </div>
+								 
                 <div class="ud-form-group mb-0">
 				       <div id="success"></div>
- 
                   <button type="submit" class="ud-main-btn">
                     Send Message
                   </button>
                 </div>
+				
+				
+				
               </form>
             </div>
-          </div>
+          
+		  
+		  
+		  
+		  
+		  </div>
         </div>
       </div>
     </section>
     <!-- ====== Contact End ====== -->
-
-
 
     <!-- ====== Footer Start ====== //-->
     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
@@ -524,10 +524,11 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.1.11.1.js"></script> 
-
-	<script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script> 
-    <script type="text/javascript" src="assets/js/contact_me.js"></script> 
+	<script src="assets/js/jquery.1.11.1.js"></script> 
+	<script src="assets/js/bootstrap.js"></script> 
+	<script src="assets/js/jquery.isotope.js"></script> 
+	<script src="assets/js/jqBootstrapValidation.js"></script> 
+    <script src="assets/js/contact_me.js"></script> 
 
     <script>
       // ==== for menu scroll
