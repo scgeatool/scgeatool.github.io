@@ -82,7 +82,12 @@
                         <a href="#installation" class="ud-submenu-link">
                           Installation Instructions
                         </a>
-                      </li>	
+                      </li>
+					  <li class="ud-submenu-item">
+                        <a href="#faq" class="ud-submenu-link">
+                          Frequently Asked Questions
+                        </a>
+                      </li>
                       <li class="ud-submenu-item">
                         <a href="https://github.com/jamesjcai/scGEAToolbox" class="ud-submenu-link">
                           Source Code
@@ -341,15 +346,15 @@
             <div class="ud-section-title" -->
               <span class="tag">Installation</span>
               <h2>Instructions for PC/Windows Installation</h2>
-<p>Step 1. Download the file <a href="SCGEATOOL_StandaloneApplication.zip">SCGEATOOL_StandaloneApplication.zip</a> (16.2 MB) and unzip it.</p>
+				<p>Step 1. Download the file <a href="SCGEATOOL_StandaloneApplication.zip">SCGEATOOL_StandaloneApplication.zip</a> (16.2 MB) and unzip it.</p>
 
-<p>Step 2. Download <a href="https://ssd.mathworks.com/supportfiles/downloads/R2021b/Release/2/deployment_files/installer/complete/win64/MATLAB_Runtime_R2021b_Update_2_win64.zip">MATLAB Runtime version 9.11 (R2021b)</a><sup>*</sup> and run the MATLAB Runtime installer<sup>&dagger;</sup>.</p>
+				<p>Step 2. Download <a href="https://ssd.mathworks.com/supportfiles/downloads/R2021b/Release/2/deployment_files/installer/complete/win64/MATLAB_Runtime_R2021b_Update_2_win64.zip">MATLAB Runtime version 9.11 (R2021b)</a><sup>*</sup> and run the MATLAB Runtime installer<sup>&dagger;</sup>.</p>
 
-<p>Step 3. To start SCGEATOOL simply double-click on the scgeatool.exe icon<sup>&sect;</sup>.</p>
+				<p>Step 3. To start SCGEATOOL simply double-click on the scgeatool.exe icon<sup>&sect;</sup>.</p>
 
-<p><font size=2><sup>*</sup>Visit <a href="https://www.mathworks.com/products/compiler/mcr.html" target="_blank">MATLAB Runtime website</a> for more information.<br><sup>&dagger;</sup>Admin privileges are required.
-<br><sup>&sect;</sup>In case you see the Publisher Unknown warning message, ignore it and continue.</font>
-</p>
+				<p><font size=2><sup>*</sup>Visit <a href="https://www.mathworks.com/products/compiler/mcr.html" target="_blank">MATLAB Runtime website</a> for more information.<br><sup>&dagger;</sup>Admin privileges are required.
+				<br><sup>&sect;</sup>In case you see the Publisher Unknown warning message, ignore it and continue.</font>
+				</p>
               
             </div>
           </div>
@@ -365,6 +370,85 @@
     </section>
     <!-- ====== Installation End ====== -->
 	
+    <!-- ====== FAQ Start ====== -->
+    <section id="faq" class="ud-faq">
+      <div class="shape">
+        <img src="assets/images/faq/shape.svg" alt="shape" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-section-title text-center mx-auto">
+              <span>FAQ</span>
+              <h2>Any Questions? Answered</h2>
+              <p>
+ 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>What if I have MATLAB?</span>
+                </button>
+                <div id="collapseOne" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+					SCGEATOOL is a standalone application running on Windows 
+					machines that do not have MATLAB installed. If your PC has 
+					MATLAB installed, you should run MATLAB and install scGEAToolbox. 
+					Click <a href="https://scgeatoolbox.readthedocs.io/en/latest/quick_installation.html">here</a> to learn how. 
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+		  </div>
+          <div class="col-lg-6">
+		  
+		              <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Why do I receive security warning in unknown publisher?</span>
+                </button>
+                <div id="collapseFour" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    Most of the users must have seen the security warning, when 
+					you try to run a file downloaded from the Internet or an 
+					executable file that is located in a Network shared folder.
+					It usually occurs when the file like scgeatool.exe is not 
+					digitally signed. You can ignore this warning when you run 
+					SCGEATOOL.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+		  
+		  
+		  
+		  </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== FAQ End ====== -->
 
     <!-- ====== Contact Start ====== -->
     <section id="contact" class="ud-contact">
