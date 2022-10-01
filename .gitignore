@@ -2,3 +2,4 @@
 node_modules
 *.bak
 index.html.bak
+*.db
