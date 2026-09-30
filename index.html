@@ -23,9 +23,9 @@
 
     <!--====== Favicon Icon ======-->
     <link
-      rel="shortcut icon"
-      href="assets/images/favicon.svg"
-      type="image/svg"
+      rel="icon"
+      href="assets/images/favicon.png"
+      type="image/png"
     />
 
     <!-- ===== All CSS files ===== -->
@@ -34,7 +34,90 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/lineicons.css" />
     <link rel="stylesheet" href="assets/css/ud-styles.css" />
-	
+
+    <!-- ====== MS Store promo ====== -->
+    <style>
+      .store-promo {
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        z-index: 9999;
+        width: 340px;
+        max-width: calc(100vw - 32px);
+        display: flex;
+        gap: 14px;
+        padding: 18px 40px 18px 18px;
+        background: var(--white);
+        border-left: 4px solid var(--primary-color);
+        border-radius: 8px;
+        box-shadow: 0 12px 34px rgba(33, 43, 54, 0.18);
+        font-family: var(--font);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(24px);
+        transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s;
+      }
+      .store-promo.show {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+      }
+      .store-promo img {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+      }
+      .store-promo h4 {
+        margin: 0 0 4px;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--heading-color);
+      }
+      .store-promo p {
+        margin: 0 0 12px;
+        font-size: 14px;
+        line-height: 1.45;
+        color: var(--body-color);
+      }
+      .store-promo .store-btn {
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--white);
+        background: var(--primary-color);
+        border-radius: 5px;
+      }
+      .store-promo .store-btn:hover {
+        color: var(--white);
+        background: #1c3fb7;
+      }
+      .store-promo .store-close {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        border: 0;
+        background: none;
+        font-size: 22px;
+        line-height: 1;
+        color: #9aa4b0;
+        cursor: pointer;
+      }
+      .store-promo .store-close:hover {
+        color: var(--heading-color);
+      }
+      @media (max-width: 575px) {
+        .store-promo {
+          right: 16px;
+          bottom: 16px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .store-promo {
+          transition: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- ====== Header Start ====== -->
@@ -231,7 +314,7 @@
           <div class="ud-about-image">
             <img src="assets/images/about/about-image.svg" alt="about-image" />
 			<center>
-			<video width="440" height="" controls autoplay muted loop>
+			<video width="440" style="max-width: 100%" controls autoplay muted loop>
   <source src="assets/images/about/about.mp4" type="video/mp4">
   </video></center>
           </div>
@@ -902,6 +985,37 @@
       }
 
       window.document.addEventListener("scroll", onScroll);
+    </script>
+
+    <!-- ====== MS Store promo ====== -->
+    <aside class="store-promo" id="storePromo" role="dialog" aria-labelledby="storePromoTitle">
+      <button type="button" class="store-close" aria-label="Close">&times;</button>
+      <img src="assets/images/favicon.png" alt="" />
+      <div>
+        <h4 id="storePromoTitle">SCGEATOOL is now on the Microsoft Store</h4>
+        <p>Install it on Windows as <strong>scGEAToolApp</strong>, straight from the Store.</p>
+        <a class="store-btn" href="https://apps.microsoft.com/detail/9N0MRFH4RZ0R" target="_blank" rel="noopener">Get it from Microsoft Store</a>
+      </div>
+    </aside>
+    <script>
+      (function () {
+        const KEY = "storePromoDismissed";
+        const DAYS = 14;
+        const promo = document.getElementById("storePromo");
+        try {
+          const t = Number(localStorage.getItem(KEY));
+          if (t && Date.now() - t < DAYS * 864e5) return;
+        } catch (e) {}
+        function dismiss() {
+          promo.classList.remove("show");
+          try {
+            localStorage.setItem(KEY, String(Date.now()));
+          } catch (e) {}
+        }
+        promo.querySelector(".store-close").addEventListener("click", dismiss);
+        promo.querySelector(".store-btn").addEventListener("click", dismiss);
+        setTimeout(() => promo.classList.add("show"), 1200);
+      })();
     </script>
   </body>
 </html>
